@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>Accesibility 101 - Checkliste til accessibility</title>
+	<style>
+		/* Critical styling goes here */
+	</style>
+</head>
+<body>
+	<!-- Start content -->
+	<header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+		<h1>Accessibility 101</h1>
+		<nav role="navigation">
+			<ul class="primaryNavigation">
+				<li><a href="index.html"><img src="img/icons8-home-page-filled-50.png" alt="accessibility forside icon"> Forside</a></li>
+				<li><a href="hvad.html"><img src="img/icons8-help-filled-50.png" alt="Hvad er accessibility spørgsmålstegn icon"> Hvad er accessibility</a></li>
+				<li><a href="test.html"><img src="img/icons8-test-tube-filled-50.png" alt="accessibility test tube icon"> Accessibility tests</a></li>
+				<li><a href="check.html"><img src="img/icons8-checklist-filled-50.png" alt="accessibility checklist icon"> Accessibility Checklist</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<main role="main" id="main">
+		<article tabindex="0">
+            <h2>Checkliste</h2>
+
+            <table>
+                <tr>
+                    <th colspan="2"><h3>Accessibility Checkliste</h3></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><h4>Opfattelig</h4></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Alternativ tekst hvor du kan</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Form inputs skal have text labels + Buttons med beskrivende værdi</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Transcripts for video/audio</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Semantisk korrekt ALLE steder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Logisk indlæsning(navigation) af elementer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Instruktioner må ikke afhænge af formen, størrelsen eller lyd</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Brug ikke farve alene, for at skelne sektioner</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Alt der afspiller eller bevæger sig, skal kunne starte/stoppe</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tekstblok= 80 tegn bred, 1.5 linjeafstand, bestemt BG-farve</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tekst kan ændres til 200% uden tab af indhold eller funktion</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Billeder af tekst, kun til gengivelse</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Responsivt indhold = Ingen horisontal scroll</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tekst frem på hover, skal kunne fjernes/lukkes ved Esc.</td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h4>Anvendelig</h4></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Alt skal være tilgængeligt ved hjælp af tastatur</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Slukke/justere tidsbegrænsning (Realtid events undtaget)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Automatisk bevægelse skal kunne starte stoppe. Eks. Slider</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Afbrydelser kan udsættes eller slettes af bruger</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Advarsel om timeouts der kan resultere i tab af data</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Intet sideindhold må blinke mere end 3 gange i sekundet</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Spring til indhold-link</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>God navigationsstruktur og ikke mindst logisk</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Linktekst skal give mening</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Gerne flere muligheder for navigering. Eks. Sitemap</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Husk knapper hvis det ikke er afgørende at swipe</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Klikbare mål er mindst 44px</td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h4>Forståelig</h4></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Language-attribut på HTML-dokument og eventuelle elementer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Beskriv svære/ukendte ord, eks. i en ordliste eller lignende</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Undgå forkortelser og skriv udtalen af svære ord</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Interaktion på sitet, må ik’ resultere i  væsentlige ændringer i design</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Menuer/lister skal have samme rækkefølge alle steder det dukker op</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Identificer elementer der dukker op flere steder, på samme måde</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hvis væsentlig ændring sker, skal denne kunne styres af bruger</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sørg for beskrivende attributter på Formbeskrivelse i HTML </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Identificer tydeligt fejl i form-validering</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vejledning, autoudførsel og bekræftelse på din form</td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h4>Robust</h4></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Brug de rigtige HTML-elementer/tags til dit site</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Valider din HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tilpas dit site til alle enheder og browsere(Responsiv/fleksibilitet)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ARIA til forbedring af tilgængeligheden(Hvis HTML er utilstrækkelig)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Brug også ARIA-alarm til f.eks. status-meddelser</td>
+                </tr>
+            </table>
+		</article>
+	</main>
+	<footer>
+		<p role="contentinfo" tabindex="0">accessibility 101 &reg;</p>
+	</footer>
+	<!-- End content -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const stylesheet = document.createElement('link');
+			stylesheet.href = 'css/style.css';
+			stylesheet.rel = 'stylesheet';
+			stylesheet.type = 'text/css';
+			document.getElementsByTagName('head')[0].appendChild(stylesheet);
+		});
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
+</body>
+</html>

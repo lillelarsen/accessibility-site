@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>Accesibility 101 - Tests omkring accessibility</title>
+	<style>
+		/* Critical styling goes here */
+	</style>
+</head>
+<body>
+	<!-- Start content -->
+	<header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+		<h1>Accessibility 101</h1>
+		<nav role="navigation">
+			<ul class="primaryNavigation">
+				<li><a href="index.html"><img src="img/icons8-home-page-filled-50.png" alt="accessibility forside icon"> Forside</a></li>
+				<li><a href="hvad.html"><img src="img/icons8-help-filled-50.png" alt="Hvad er accessibility spørgsmålstegn icon"> Hvad er accessibility</a></li>
+				<li><a href="test.html"><img src="img/icons8-test-tube-filled-50.png" alt="accessibility test tube icon"> Accessibility tests</a></li>
+				<li><a href="check.html"><img src="img/icons8-checklist-filled-50.png" alt="accessibility checklist icon"> Accessibility Checklist</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<main role="main" id="main">
+		<article>
+            <h2 tabindex="0">Test af forskellige hjemmesiders accessibility</h2>
+            <ul tabindex="0">
+                <li><h3>Skat.dk</h3></li> 
+                <li><span>Accessibility-score(mobil):</span>91</li>
+                <li><span>Accessibility-score(desktop):</span>90</li>
+                <li><span>Accessibility fejl:</span>1</li>
+                <li>Den brokker sig kun over at baggrundfarven kan være svær at læse tekst på.</li>
+                <li><span>Tabtest:</span>Den kører fint igennem links og tekster, og læser det hele op.</li>
+                <li><span>Mobil:</span>Kører den fint som på desktop</li>
+            </ul>
+            <ul tabindex="0">
+                <li><h3>E-boks.dk</h3></li>
+                <li><span>Accessibility-score(mobil):</span>84</li>
+                <li><span>Accessibility-score(desktop):</span>92</li>
+                <li><span>Accessibility fejl:</span>1</li>
+                <li>Den brokker sig kun over at buttons ikke har navne, men det gøres op ved at der er tekst i knapperne.</li>
+                <li><span>Tabtest:</span>Den kører fint igennem links, og læser dem op. Dog læser den ikke de små tekster op, som kan være relevante.</li>
+                <li><span>Mobil:</span>Kører den fint som på desktop</li>
+            </ul>
+            <ul tabindex="0">
+                <li><h3>Borger.dk</h3></li>
+                <li><span>Accessibility-score(mobil):</span>91</li>
+                <li><span>Accessibility-score(desktop):</span>100</li>
+                <li><span>Accessibility fejl:</span>0</li>
+                <li>Den brokker sig kun over at baggrundfarven kan være svær at læse tekst på.</li>
+                <li><span>Tabtest:</span>Den kører fint igennem links og tekster, og læser det hele op. Dog med nogle få mærkelige hop, ned og op på siden på mobil.</li>
+                <li><span>Mobil:</span>Kører den fint som på desktop</li>
+			</ul>
+			<div id="advanced">
+				<label><input type="checkbox" role="checkbox" aria-checked="true">Download</label>
+				<label><input type="checkbox" role="checkbox" aria-checked="false">Send</label>
+			</div>
+			<div role="radiogroup" aria-activedescendant="rb1" tabindex="0">
+				<input type="radio" id="rb1" role="radio" aria-checked="false">water
+				<input type="radio" id="rb2" role="radio" aria-checked="false">Soda
+				<input type="radio" id="rb3" role="radio" aria-checked="false">Coffee
+			</div>
+		</article>
+	</main>
+	<footer>
+		<p role="contentinfo" tabindex="0">accessibility 101 &reg;</p>
+	</footer>
+	<!-- End content -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const stylesheet = document.createElement('link');
+			stylesheet.href = 'css/style.css';
+			stylesheet.rel = 'stylesheet';
+			stylesheet.type = 'text/css';
+			document.getElementsByTagName('head')[0].appendChild(stylesheet);
+		});
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
+</body>
+</html>

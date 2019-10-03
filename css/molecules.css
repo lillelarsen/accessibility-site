@@ -1,0 +1,25 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+article ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1em;
+    max-width: 30em;
+    border: 0.5em solid #000;
+}
+article ul li {
+    margin-bottom: 0.5em;
+}
+article ul li span {
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+table {
+    width: 70%;
+}

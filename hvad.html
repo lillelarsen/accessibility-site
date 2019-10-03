@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>Accesibility 101 - Hvad er accessibility</title>
+	<style>
+		/* Critical styling goes here */
+	</style>
+</head>
+<body>
+	<!-- Start content -->
+	<header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+		<h1>Accessibility 101</h1>
+		<nav role="navigation">
+			<ul class="primaryNavigation">
+				<li><a href="index.html"><img src="img/icons8-home-page-filled-50.png" alt="accessibility forside icon"> Forside</a></li>
+				<li><a href="hvad.html"><img src="img/icons8-help-filled-50.png" alt="Hvad er accessibility spørgsmålstegn icon"> Hvad er accessibility</a></li>
+				<li><a href="test.html"><img src="img/icons8-test-tube-filled-50.png" alt="accessibility test tube icon"> Accesibility tests</a></li>
+				<li><a href="check.html"><img src="img/icons8-checklist-filled-50.png" alt="accessibility checklist icon"> Accesibility Checklist</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<main role="main" id="main">
+		<article id="text" tabindex="0">
+            <h2>Hvad er accessibility</h2>
+            <h3>Opfattelig</h3>
+            <p>
+                Delen hvor vi tænker over hvordan et site bliver opfattet, både for blinde og døve, fysisk eller psykisk handicappet. 
+            </p>
+            <p>
+                Tekstalternativer:  
+                Alt hvad der er relevant I HTML'en skal beskrives, eksempelvis med alternativ tekst, knapper skal have en beskrivende værdi, forms og rammer skal være passende betegnet. 
+            </p>
+            <blockquote lang="en">"Talk is cheap, show me the code"</blockquote>
+            <p>
+                Tidsbaserede: 
+                Så vidt muligt beskrive video og lyd, med tekstudskrift afhængig om det kan beskrives. Omvendt så sæt undertekster på dine videoer.                     
+            </p>
+            <p>
+                Tilpasning: 
+                Indhold skal kunne vises på allle devices og på overskuelige måder, brug semantiske tags korrekt, også I teksten, eksempelvis &lt;blockquote&gt; og så videre. Instruktioner må ikke ændre sig på eksempelvis mobil, altså tryk på den blå knap, så skal den blå knap være der.                     
+            </p>
+            <p>
+                Skelnes: 
+                Brug de rigtige kontrastforhold, både I størrelser og farver. Siden skal være læsbar uanset zoom. Blokke af tekst er overskuelige, helst ikke over 80 tegn bred, undgå scrolling(specielt) horisontalt.                   
+            </p>
+            <h3>Anvendelig</h3>
+            <p>Delen hvor vi tænker over hvordan man navigere rundt på et site. </p>
+            <p>Tastaturtilgænglighed: 
+                Lav alle funktioner tilgængelige fra et tastatur 
+            </p>
+            <p>Tid: 
+                Sæt ikke tidbegrænsniger på indholdet. Bevægelige,blinkende  dynamiske elementer skal kunne stoppes af brugeren. 
+            </p>
+            <p>Anfald: 
+                Intet sideindhold der blinker mere end 3 gange pr. Sekund. Kun hvis lille og/eller lav kontrast. 
+            </p>
+            <p>Navigerbar: 
+                God html struktur, links rækkefølge er logisk. Flere måder at finde indhold. Sideoverskrifter og etikketer. 
+            </p>
+            <p>Inputmodaliteter: 
+                Alt skal virker selvom man ikke kan swipe eller onmousedown. Tekst på knapper. Klikbare mål er 44pixel. 
+            </p>
+            <h3>Forståelig</h3>
+            <p>Delen hvor vi tænker over hvad der står på et site.  </p>
+            <p>Læsbar: 
+                Lang"da"-attribut. Ikke fagudtryk, ikke forkortelser. Udtale efter svært ord. 
+            </p>
+            <p>Forudsiglighed: 
+                Når elementer links, navigation fremhæves, ændrer det ikke på sitets logik. Identificere konsekvent.
+            </p>
+            <p>Input assistance: 
+                Hjælp brugeren I formularer og generelt med hjælpetekst ved funktioner og interaktion. 
+            </p>
+            <h3>Robust</h3>
+            <p>Delen hvor vi tænker over hvordan sitet er opbygget.  Skal kunne vises på alle devices, skærme m.m. </p>
+            <p>Kombatibel: 
+                Valider HTML og CSS, Maksimere kompatibilitet med nuværende og fremtidige brugeragenter. Derfor semantistisk korrekt opstilling. 
+            </p>
+		</article>
+	</main>
+	<footer>
+		<p role="contentinfo" tabindex="0">accessibility 101 &reg;</p>
+	</footer>
+	<!-- End content -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const stylesheet = document.createElement('link');
+			stylesheet.href = 'css/style.css';
+			stylesheet.rel = 'stylesheet';
+			stylesheet.type = 'text/css';
+			document.getElementsByTagName('head')[0].appendChild(stylesheet);
+		});
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
+</body>
+</html>
